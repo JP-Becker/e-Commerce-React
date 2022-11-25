@@ -13,7 +13,7 @@ Projeto desenvolvido em React com o objetivo de implementar um e-Commerce de art
 
 Nesse projeto botei em prática conhecimentos e conceitos importantes, como: JSX, Componentes, Props, Estado, Fluxo de dados no React, Styled-components, Renderização de listas e Renderização condicional. 
 
-[Clique aqui para acessar o projeto](!http://e-commerce-react.surge.sh/)
+[Clique aqui para acessar o projeto](http://e-commerce-react.surge.sh/)
 
 
 ## Descrição
