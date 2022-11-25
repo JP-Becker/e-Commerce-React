@@ -1,4 +1,4 @@
-# JP artigos espaciais
+# e-Commerce de artigos espaciais
 
 E-commerce fictício de artigos espaciais
 
