@@ -2,7 +2,7 @@ import './App.css';
 import { Produtos } from './components/produtos/produtos';
 import {Header} from "./components/Header/header";
 import { Filtros } from './components/Filtros/filtros';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Carrinho } from './components/Carrinho/carrinho';
 import { TelaFinal } from './components/TelaFinal/TelaFinal';
 import lista from "./listaProdutos/lista.json"
@@ -130,6 +130,8 @@ function App() {
 },
 ] 
 
+    const cartLocalStorage = JSON.parse(window.localStorage.getItem('cart'))
+
     const [buscaNome, setBuscaNome] = useState("") // estado para buscar por nome
     const [price, setPrice] = useState("") // estado para filtrar por preço
     const [ordena, setOrdena] = useState("") // estado para ordenar alfabeticamente
@@ -137,8 +139,13 @@ function App() {
     const [itensNumero, setItensNumero] = useState(0) // estado que conta a quantidade de clicks no botao adiconar ao carrinho
     const [trocarTela, setTrocarTela] = useState(false) // estado para trocar entre a tela inicial e a do carrinho
     const [valorBotao, setValorBotao] = useState("") // estado para saber qual botao "adicionar ao carrinho" foi clicado
-    const [cart, setCart] = useState([]) // array com os produtos adicionados ao carrinho
+    const [cart, setCart] = useState(cartLocalStorage) // array com os produtos adicionados ao carrinho
     const [telaFinal, setTelaFinal] = useState(false) // estado para trocar entre a tela do carrinho e a tela final
+    
+    useEffect(() => {
+        window.localStorage.setItem("cart", JSON.stringify(cart))
+    }, [cart])
+   
 
     function addCart () {
         let copyCart = [...cart]
@@ -154,7 +161,7 @@ function App() {
             findItemFromCart.preco += findItemFromList.preco
         } else { // senao adiciona o item
             findItemFromList.qtd = 1
-            copyCart.push(findItemFromList)
+            copyCart.push(findItemFromList) 
             setCart(copyCart)
         }
     }
