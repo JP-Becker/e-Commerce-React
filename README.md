@@ -13,10 +13,20 @@ Projeto desenvolvido em React com o objetivo de implementar um e-Commerce de art
 
 Nesse projeto botei em prática conhecimentos e conceitos importantes, como: JSX, Componentes, Props, Estado, Fluxo de dados no React, Styled-components, Renderização de listas e Renderização condicional. 
 
-[Clique aqui para acessar o projeto](http://e-commerce-react.surge.sh/)
+## 🔗Link de Acesso
+- Deploy Surge: [Clique aqui!](https://e-commerce-react.surge.sh/).
 
 
-## Descrição
+### Instalando
+```bash
+# Instalando dependências
+npm install
+
+# executando o projeto
+npm start
+```
+
+## Descrição das funcionalidades
 
 1. Main page
     - A pagina exibirá uma lista de todos os produtos disponiveis no e-commerce, com os dados do produto (imagem, nome, preço) que poderão ser adicionados no carrinho pelo botão de "Compra". Podendo ser ordenado pela ordem do Preço Maior para o Menor e vice-versa.
@@ -30,6 +40,26 @@ Nesse projeto botei em prática conhecimentos e conceitos importantes, como: JSX
 
 3. Página final
     - Página criada com o intuito de ser meramente ilustrativa. Possuindo meu e-mail e telefone para contato.
+
+### Bibliotecas Utilizadas
+
+```bash
+styled-components
+axios
+react-router-dom
+```
+
+## 💡IDE utilizada:
+- VSCode
+
+- ## 💻Tecnologias 
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![Javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![Styled-Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
+![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
 
 ## Contato
 
