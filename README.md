@@ -26,6 +26,16 @@ npm install
 npm start
 ```
 
+### Layout (HomePage)
+
+| <img src="./public/printEcommerce.png" width=600><br> |
+| :---: |
+
+### Layout (Meu Carrinho)
+
+| <img src="./public/printEcommerceMeuCarrinho.png" width=600><br> |
+| :---: |
+
 ## Descrição das funcionalidades
 
 1. Main page
